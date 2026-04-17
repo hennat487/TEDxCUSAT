@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEDx CUSAT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>TEDx CUSAT</h1>
+    <p>Ideas That Shape Tomorrow</p>
+    <a href="#tickets" class="btn">Get Tickets</a>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About TEDx</h2>
+    <p>
+      TEDx events are independently organized gatherings that bring people together 
+      to share powerful ideas. TEDx CUSAT aims to inspire innovation, creativity, 
+      and meaningful conversations among students and professionals.
+    </p>
+  </section>
+
+  <!-- Speakers Section -->
+  <section class="speakers">
+    <h2>Our Speakers</h2>
+    <div class="speaker-container">
+
+      <div class="card">
+        <h3>Arjun Nair</h3>
+        <p>Tech Innovator</p>
+      </div>
+
+      <div class="card">
+        
+        <h3>Meera Joseph</h3>
+        <p>Entrepreneur</p>
+      </div>
+
+      <div class="card">
+  
+        <h3>Rahul Menon</h3>
+        <p>Motivational Speaker</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Tickets Section -->
+  <section id="tickets" class="tickets">
+    <h2>Join Us</h2>
+    <p>Be part of an unforgettable experience</p>
+    <button onclick="alert('Registration Coming Soon!')">Register Now</button>
+    <section id="game-container" style="text-align: center; padding: 40px; background: #000; color: white;">
+    <h2>Idea Catcher</h2>
+    
+    <div id="startScreen">
+        <button onclick="startGame()" style="padding: 10px 20px; background: #e62b1e; color: white; border: none; cursor: pointer;">Start Game</button>
+    </div>
+
+    <div id="gameScreen" class="hidden">
+        <div>Score: <span id="score">0</span> | Missed: <span id="missed">0</span></div>
+        <div id="gameArea" style="width: 100%; height: 400px; background: #222; position: relative; overflow: hidden; border: 2px solid #e62b1e;">
+            <div id="basket" style="width: 60px; height: 15px; background: #e62b1e; position: absolute; bottom: 10px; left: 50%;"></div>
+        </div>
+    </div>
+
+    <div id="endScreen" class="hidden">
+        <h3 id="resultText"></h3>
+        <button onclick="restartGame()" style="padding: 10px 20px; background: white; color: black; border: none;">Play Again</button>
+    </div>
+</section>
+
+<script src="script.js"></script>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 TEDx CUSAT | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
